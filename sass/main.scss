@@ -116,7 +116,7 @@ body {
             .nosotrosTexto { grid-column: 1/4;
                              grid-row: 1/2 ;
                              margin:5px;
-                             padding: 40px;
+                             padding:5px;
                              @include centrado;
                              flex-wrap: wrap;
                              color: white;
