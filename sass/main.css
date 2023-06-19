@@ -1,4 +1,3 @@
-@import url(./_footer.scss);
 body {
   background-image: url(../imagenes/fondobody.jpg);
   background-size: contain;
@@ -15,6 +14,61 @@ body {
   border-radius: 70%;
   width: 150px;
   margin: 3px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+}
+footer .nosotrosFooter {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .ubicacion {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  flex-direction: column;
+}
+footer .ubicacion a {
+  margin: 20px;
+  padding: 5px;
+}
+footer .ubicacion h5 {
+  margin: 10px;
+  padding: 5px;
+}
+footer .redSocial {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+footer .redSocial svg {
+  color: black;
+  margin: 5px;
+  padding: 5px;
+}
+footer .copy {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px;
+  padding: 7px;
 }
 
 .menu ul {

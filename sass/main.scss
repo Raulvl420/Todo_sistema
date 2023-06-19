@@ -11,17 +11,8 @@ body {
                   align-items: center;
 }
 
-@import url(./_footer.scss);
-
-.header { display: flex;
-          justify-content: space-between;
-         .imagen {
-          img { border-radius: 70%;
-                width: 150px; 
-                margin: 3px;
-         }   
-         }
-}
+@import "header";
+@import "footer";
 
 .menu {
         ul { display: flex;  
