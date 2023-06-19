@@ -1,3 +1,122 @@
 body {
-  background-color: red;
+  background-image: url(../imagenes/fondobody.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .imagen img {
+  border-radius: 70%;
+  width: 200px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+.menu ul li {
+  margin: 10px;
+  padding: 5px;
+  border: solid;
+  list-style: none;
+  border-radius: 10%;
+  background-color: white;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.venta ul {
+  display: flex;
+  justify-content: space-around;
+}
+.venta ul li {
+  margin: 10px;
+  padding: 5px;
+  border: solid;
+  list-style: none;
+  border-radius: 10%;
+  background-color: white;
+}
+.venta ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#carouselExampleIndicators {
+  margin: 50px;
+  padding: 100px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+/* Sigue el menu del index */
+.videos {
+  display: flex;
+  flex-direction: column;
+}
+.videos .webinars {
+  margin: 15px;
+  display: flex;
+}
+.videos .webinars a:hover {
+  transform: scale(0.9);
+}
+.videos .webinars a:hover a {
+  overflow: hidden;
+}
+.videos .webinars dl {
+  background-color: rgb(22, 30, 181);
+  color: white;
+  border-radius: 5%;
+  width: 40%;
+  font-weight: 200;
+  margin: 10px 10px 10px 200px;
+  padding: 5px;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.nosotros .nosotrosTexto {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin: 5px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nosotros .nosotrosTexto h2 {
+  align-items: center;
+}
+.nosotros .nosotrosTex {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.nosotros .imagenesNosotros {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.nosotros .imagenesNosotros img {
+  border-radius: 20%;
+}
+.nosotros .nosotrosImagenes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.nosotros .nosotrosImagenes img {
+  border-radius: 20%;
 }/*# sourceMappingURL=main.css.map */
