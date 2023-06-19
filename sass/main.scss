@@ -1,7 +1,6 @@
 body {
     background-image: url(../imagenes/fondobody.jpg);
     background-size:contain;
-    background-repeat: repeat-y;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -11,7 +10,8 @@ body {
           justify-content: space-between;
          .imagen {
           img { border-radius: 70%;
-               width: 200px; 
+                width: 150px; 
+                margin: 3px;
          }   
          }
 }
@@ -19,8 +19,9 @@ body {
 .menu {
         ul { display: flex;  
              justify-content: space-around;
-             li { margin: 10px;
-                  padding: 5px;
+             align-items: center;
+             li { margin: 2px;
+                  padding: 2px;
                   border: solid;
                   list-style: none;
                   border-radius: 10%;
@@ -35,8 +36,8 @@ body {
 .venta {
          ul { display: flex;
               justify-content: space-around;
-              li { margin: 10px;
-                   padding: 5px;
+              align-items: center;
+              li { 
                    border: solid;
                    list-style: none;
                    border-radius: 10%;
@@ -48,19 +49,103 @@ body {
               }
          }  
 
-#carouselExampleIndicators { margin:50px;
-                             padding:100px;         
+#carouselExampleIndicators { margin:10px;
+                             padding:50px;         
 }
 
 .newsletter { display: flex;
               justify-content: center;
-
+              align-items: center;
+              /* hacer un gradient */
+              h4 { background-color: white;
+                   border: solid;
+                   border-style: double;
+                   margin: 5px 5px 5px 5px;
+                   padding: 5px;
+                   form { margin: 5px;
+                          padding: 5px;
+                   }
+              }
 
 }
-/* Sigue el menu del index */
 
+.solucionesDestacadas { display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 80px 1fr;
+                        h3 { grid-column: 1/4;
+                             grid-row: 1/2;
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             margin: 10px 0 10px 0;
+                             padding: 5px;
+                        }
+                        .soluciones { grid-column: 1/4;
+                                      grid-row: 2/3;
+                                      display: flex;
+                                      justify-content: space-between;
+                                      margin: 10px;
+                                      flex-wrap: wrap;
+                                      img { width: 200px;
+                                            height: 200px;
+                                            margin: 10px;
+                                            padding: 10px;
+                                            border-radius: 10%;  
+                                      } 
+                        }              
+}
+
+footer { display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         color: white;
+         .nosotrosFooter { grid-column: 1/2;
+                           grid-row: 1/2;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           flex-wrap: wrap; 
+         }
+         .ubicacion { grid-column: 2/3;
+                      grid-row: 1/2;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin: 10px;
+                      padding: 5px;
+                      flex-wrap: wrap;
+                      a { margin: 20px;
+                          padding: 5px;
+                      }
+                      h5 { margin: 10px;
+                           padding: 5px; 
+                      }
+         }
+         .redSocial { grid-column: 3/4;
+                      grid-row: 1/2;
+                      display:flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                      align-items: center;
+                      margin: 10px;
+                      svg { color:black;
+                            margin: 5px;
+                            padding: 5px;
+                      }
+                      }
+                      .copy { grid-column: 1/2;
+                              grid-row:2/3;
+                              display: flex; 
+                              align-items: flex-end;
+                              margin: 20px;
+                              padding: 7px;
+
+                }
+          }
+                      
+      
 .videos { display: flex;
-          flex-direction: column;    
+          flex-direction: column;   
           .webinars { margin: 15px;
                       display: flex;
                       a:hover { -webkit-transform:scale(0.90); transform: scale(0.90);
@@ -87,13 +172,21 @@ body {
                              padding: 40px;
                              display: flex;
                              justify-content: center;
+                             align-items: center;
                              flex-wrap: wrap;
-                             h2 {align-items: center;  
-
+                             color: white;
+                             h2 {align-items: center;
+                                 color: black;   
                              }
           }
             .nosotrosTex { grid-column: 2/4;
-                           grid-row:2/3; 
+                           grid-row:2/3;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           margin: 5px;
+                           padding: 40px;
+                           color: white;
             }
             .imagenesNosotros { grid-column:4/5;
                                 grid-row: 1/2;
@@ -103,12 +196,21 @@ body {
             }
             .nosotrosImagenes { grid-column: 1/2;
                                 grid-row:2/3;
-                                
                                 img { border-radius: 20%;
 
                                 }
             }
         }
 
-
+.camarasIP { display:grid;
+             align-items: center; 
+             gap:4rem;
+             grid-auto-rows: 22rem;
+             grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
+             margin: 10px;
+             padding: 5px;
+             .card { margin: 20px;
+                     padding: 5px;
+             }
+}
 
