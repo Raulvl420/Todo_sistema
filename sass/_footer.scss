@@ -1,0 +1,40 @@
+footer { display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    .nosotrosFooter { grid-column: 1/2;
+                      grid-row: 1/2;
+                      @include centrado;
+                      flex-wrap: wrap; 
+    }
+    .ubicacion { grid-column: 2/3;
+                 grid-row: 1/2;
+                 @include centrado;
+                 margin: 10px;
+                 padding: 5px;
+                 flex-direction: column;
+                 a { margin: 20px;
+                     padding: 5px;
+                 }
+                 h5 { margin: 10px;
+                      padding: 5px; 
+                 }
+    }
+    .redSocial { grid-column: 3/4;
+                 grid-row: 1/2;
+                 @include centrado;
+                 flex-direction: column;
+                 margin: 10px;
+                 svg { color:black;
+                       margin: 5px;
+                       padding: 5px;
+                 }
+                 }
+                 .copy { grid-column: 1/2;
+                         grid-row:2/3;
+                         display: flex; 
+                         align-items: flex-end;
+                         margin: 20px;
+                         padding: 7px;
+           }
+     }
