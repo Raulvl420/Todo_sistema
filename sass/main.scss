@@ -7,12 +7,21 @@ body {
 }
 
 @mixin centrado { display: flex;
-                  justify-content: center;
-                  align-items: center;
+                   justify-content: center;
+                   align-items: center;
+}
+
+@mixin centrado1 { display: flex;
+                   justify-content: flex-start;
+                   align-items: center;
+}
+
+@mixin letraParrafo { font-family: 'Roboto Condensed', sans-serif;
 }
 
 @import "header";
 @import "footer";
+@import "media";
 
 .menu {
         ul { display: flex;  
@@ -54,6 +63,9 @@ body {
 .newsletter { display: flex;
               justify-content: center;
               align-items: center;
+              width: 100%;
+              margin:10px;
+              padding: 5px;
               /* hacer un gradient */
               h4 { background-color: white;
                    border: solid;
@@ -67,9 +79,9 @@ body {
 
 }
 
-.solucionesDestacadas { display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        grid-template-rows: 80px 1fr;
+.solucionesDestacadas { display: flex;
+                        flex-wrap: wrap;      
+                        width: 100%;
                         h3 { grid-column: 1/4;
                              grid-row: 1/2;
                              @include centrado;
@@ -82,15 +94,17 @@ body {
                                       justify-content: space-between;
                                       margin: 10px;
                                       flex-wrap: wrap;
+                                      width: 100%;
                                       img { width: 200px;
                                             height: 200px;
                                             margin: 10px;
                                             padding: 10px;
-                                            border-radius: 10%;  
-                                      } 
+                                            border-radius: 10%;
                         }              
+     }
 }
-    
+
+
 .videos { display: flex;
           flex-direction: column;   
           .webinars { margin: 15px;
@@ -130,6 +144,7 @@ body {
                            margin: 5px;
                            padding: 40px;
                            color: white;
+                           @include letraParrafo;
             }
             .imagenesNosotros { grid-column:4/5;
                                 grid-row: 1/2;
