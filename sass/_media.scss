@@ -1,8 +1,48 @@
 @media (max-width: 460px) {
-    .solucionesDestacadas {
-         .soluciones {
-              img { width: 130px;
-              }
+     .solucionesDestacadas {
+          .soluciones {
+               img { width: 130px;
+               }
+          }
+     }
+ }
+
+ @media (max-width: 460px) {
+     footer { font-size: 13px;  
+         .redSocial { grid-column:1/4;
+                      grid-row:2/3;
+                      flex-direction: row;
+                      width: 100%;
+                      svg { width: 40px;
+                      }              
          }
-    }
+     }
 }
+
+ @media (max-width: 610px) {
+     .newsletter { flex-direction: column;
+                   font-size: 10px;
+                    h4 { font-size: 1rem;
+                    }
+     }
+ }
+
+ @media (max-width: 540px) {
+     .nosotros { 
+          .imagenesNosotros { display: none;
+          }
+          .nosotrosTex { overflow-y: scroll;
+          }
+     }
+ }
+
+ @media (max-width: 650px) {
+     .videos {
+          .webinars { font-size: 12px;
+               img { width: 180px;
+               }
+          }
+     }          
+ }
+
+ 

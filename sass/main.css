@@ -6,80 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-.header .imagen img {
-  border-radius: 70%;
-  width: 150px;
-  margin: 3px;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  color: white;
-  margin: 10px;
-  padding: 5px;
-}
-footer .nosotrosFooter {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 5px;
-}
-footer .ubicacion {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 10px;
-  padding: 5px;
-  flex-direction: column;
-}
-footer .ubicacion a {
-  margin: 20px;
-  padding: 5px;
-}
-footer .ubicacion h5 {
-  margin: 10px;
-  padding: 5px;
-}
-footer .redSocial {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  margin: 10px;
-}
-footer .redSocial svg {
-  color: black;
-  margin: 5px;
-  padding: 5px;
-}
-footer .copy {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  display: flex;
-  align-items: flex-start;
-  margin: 20px;
-  padding: 7px;
-}
-
-@media (max-width: 460px) {
-  .solucionesDestacadas .soluciones img {
-    width: 130px;
-  }
-}
 .menu ul {
   display: flex;
   justify-content: space-around;
@@ -141,13 +67,11 @@ footer .copy {
 }
 
 .solucionesDestacadas {
-  display: flex;
-  flex-wrap: wrap;
+  margin: auto;
+  padding: 5px;
   width: 100%;
 }
 .solucionesDestacadas h3 {
-  grid-column: 1/4;
-  grid-row: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,10 +98,14 @@ footer .copy {
 .videos {
   display: flex;
   flex-direction: column;
+  margin: 2px;
+  padding: 2px;
 }
 .videos .webinars {
   margin: 15px;
+  padding: 2px;
   display: flex;
+  justify-content: space-around;
 }
 .videos .webinars a:hover {
   transform: scale(0.9);
@@ -191,14 +119,14 @@ footer .copy {
   border-radius: 5%;
   width: 40%;
   font-weight: 200;
-  margin: 10px 10px 10px 200px;
+  margin: 10px 10px 10px 10px;
   padding: 5px;
 }
 
 .nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 300px;
 }
 .nosotros .nosotrosTexto {
   grid-column: 1/4;
@@ -209,26 +137,32 @@ footer .copy {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: white;
+  background-color: white;
+  opacity: 0.75;
+  border-radius: 10%;
 }
 .nosotros .nosotrosTexto h2 {
-  align-items: center;
   color: black;
 }
 .nosotros .nosotrosTex {
-  grid-column: 2/4;
+  grid-column: 2/5;
   grid-row: 2/3;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 5px;
-  padding: 40px;
-  color: white;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.75;
+  border-radius: 5%;
   font-family: "Roboto Condensed", sans-serif;
 }
 .nosotros .imagenesNosotros {
   grid-column: 4/5;
   grid-row: 1/2;
+  margin: 1px;
+  padding: 3px;
+  display: flex;
 }
 .nosotros .imagenesNosotros img {
   border-radius: 20%;
@@ -236,6 +170,10 @@ footer .copy {
 .nosotros .nosotrosImagenes {
   grid-column: 1/2;
   grid-row: 2/3;
+  margin: 1px;
+  padding: 5px;
+  display: flex;
+  align-items: flex-start;
 }
 .nosotros .nosotrosImagenes img {
   border-radius: 20%;
@@ -254,12 +192,17 @@ footer .copy {
   margin: 20px;
   padding: 5px;
 }
+.camarasIP .card img {
+  width: 276px;
+  height: 140px;
+}
 
 .soporteTitulo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
+  padding: 2px;
   flex-direction: column;
   width: 100%;
   height: 100px;
@@ -270,25 +213,28 @@ footer .copy {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   border: solid;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .soporte .nombre {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 5px;
   padding: 5px;
-  display: flex;
-  align-items: center;
-}
-.soporte .nombre form {
   width: 100%;
+  height: 100px;
 }
 .soporte .email {
   grid-column: 1/2;
   grid-row: 2/3;
-  display: flex;
-  align-items: center;
+  display: block;
   margin: 5px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .soporte .marca {
   grid-column: 2/3;
@@ -302,7 +248,7 @@ footer .copy {
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin: 5px;
   padding: 5px;
 }
@@ -313,4 +259,118 @@ footer .copy {
   align-items: center;
   margin: 5px;
   padding: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .imagen img {
+  border-radius: 70%;
+  width: 150px;
+  margin: 3px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+}
+footer .nosotrosFooter {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+}
+footer .ubicacion {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  flex-direction: column;
+}
+footer .ubicacion a {
+  margin: 20px;
+  padding: 5px;
+}
+footer .ubicacion h5 {
+  margin: 10px;
+  padding: 5px;
+}
+footer .redSocial {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+footer .redSocial svg {
+  color: black;
+  margin: 5px;
+  padding: 5px;
+}
+footer .copy {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 7px;
+}
+
+@media (max-width: 460px) {
+  .solucionesDestacadas .soluciones img {
+    width: 130px;
+  }
+}
+@media (max-width: 460px) {
+  footer {
+    font-size: 13px;
+  }
+  footer .redSocial {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .redSocial svg {
+    width: 40px;
+  }
+}
+@media (max-width: 610px) {
+  .newsletter {
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .newsletter h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .nosotros .imagenesNosotros {
+    display: none;
+  }
+  .nosotros .nosotrosTex {
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 650px) {
+  .videos .webinars {
+    font-size: 12px;
+  }
+  .videos .webinars img {
+    width: 180px;
+  }
 }/*# sourceMappingURL=main.css.map */
